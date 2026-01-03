@@ -1,0 +1,19 @@
+project_id = "lyrical-art-482604-c9"
+region     = "asia-northeast1"
+
+# Naming
+name_prefix             = "fastapi-app"
+cloud_run_service_name  = "fastapi-app"
+artifact_registry_repo_id = "fastapi-app"
+
+# First apply can use a public dummy image.
+# After pushing your image, set this to:
+# "asia-northeast1-docker.pkg.dev/lyrical-art-482604-c9/fastapi-app/fastapi-app:v1"
+container_image = "us-docker.pkg.dev/cloudrun/container/hello"
+
+# Cloud SQL
+db_name        = "app"
+db_user        = "app"
+cloud_sql_tier = "db-f1-micro"
+
+
